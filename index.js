@@ -2,10 +2,10 @@
 // esm import
 import process from 'node:process';
 
-// nbbRequire import to require core modules
+// nodebb.require loading commonjs src/user.js
 const user = nodebb.require('./src/user');
 
-// test1 is an ESM module
+// can also load test1 ESM module
 const test1 = nodebb.require('./src/test1');
 
 export function init(params) {
