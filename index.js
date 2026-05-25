@@ -3,10 +3,10 @@
 import process from 'node:process';
 
 // nbbRequire import to require core modules
-const user = nbbRequire('./src/user');
+const user = nodebb.require('./src/user');
 
 // test1 is an ESM module
-const test1 = nbbRequire('./src/test1');
+const test1 = nodebb.require('./src/test1');
 
 export function init(params) {
 	params.router.get('/esm-test', async function (req, res) {
